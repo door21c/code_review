@@ -2,8 +2,16 @@
 #include "./shopping.h"
 
 // Push Goods object to shopping_list_ vector
-void Shopping::PushList(Goods object) {
+bool Shopping::PushList(Goods object) {
+  for (std::vector<Goods>::iterator i = shopping_list_.begin();
+       i != shopping_list_.end(); i++) {
+    if (i->GetIndex() == object.GetIndex())
+    {
+      return false;
+    }
+  }
   shopping_list_.push_back(object);
+  return true;
 }
 
 // Get Goods object from end of shopping_list_ vector
