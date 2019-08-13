@@ -18,6 +18,7 @@ class Shopping{
   void PushList(Goods object);
   Goods GetLastElement();
   void PrintList();
+  int  Size();
   void SortByPrice();
   void SortByIndex();
 
