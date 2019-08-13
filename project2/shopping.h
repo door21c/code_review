@@ -15,7 +15,7 @@
 //     tobuylist.PrintList();
 class Shopping{
  public:
-  void PushList(Goods object);
+  bool PushList(Goods object);
   Goods GetLastElement();
   void PrintList();
   int  Size();
