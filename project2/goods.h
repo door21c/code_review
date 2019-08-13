@@ -13,8 +13,8 @@ class Goods{
   int GetPrice();
 
  private:
-  int goods_index_ = 0;
-  int goods_price_ = 0;
+  int index_ = 0;
+  int price_ = 0;
 };
 
 
