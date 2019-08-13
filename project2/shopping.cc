@@ -20,6 +20,11 @@ void Shopping::PrintList() {
   }
 }
 
+// Return the size of vector.
+int Shopping::Size() {
+  return shopping_list.size();
+}
+
 // Sort shopping_list_ Elements by Price
 // Apply Selection Sort algorithm
 void Shopping::SortByPrice() {
